@@ -5,7 +5,7 @@ use std::collections::HashSet;
 #[pyfunction]
 /// Gets the count of the unique elements in a string
 fn unique_count(val: &str) -> PyResult<usize> {
-    let letters : HashSet<u8> = val.bytes().collect();
+    let letters : HashSet<char> = val.chars().collect();
     Ok(letters.len())
 }
 
