@@ -7,7 +7,7 @@ This is a simple lib for showcasing some results of Rust Module performance.
 
 ```rust
 fn unique_count(val: &str) -> PyResult<usize> {
-    let letters : HashSet<u8> = val.bytes().collect();
+    let letters : HashSet<char> = val.chars().collect();
     Ok(letters.len())
 }
 ```
@@ -38,5 +38,20 @@ and also 20% jump in Mean Performance.
 This all might not mean much much on a small scale but on a scale where performance critical workload needs to be processed it means a lot.
 And the best part is the code is almost the same and this took very little effort to actually get it ready.
 
+**More Tests**
+![](https://i.imgur.com/LDziV3p.png)
+![](https://i.imgur.com/Gz0AVo6.png)
+
+### Conclusion
+From the simple tests it's pretty clear which side wins but let me break it down a bit further.
+The performance as you can see from the images is far more consistent of the Rust module. Which allows us to predict and create much more reliable systems.
+
+We also notice that the Rust code is not much different from the Python code. Because of it's zero cost abstractions.
 
 #### PS: The Performance Noted from Rust is not the limit of it's performance, cause it's easy to vectorise and/or parallelise it can become multiple times faster and surely with control of a low level language we could always optimize the code a bit more.
+
+
+### TODO:
+- Add more examples.
+- Create a simple integration example with a greater sized project.
+- Add some setup tools.
