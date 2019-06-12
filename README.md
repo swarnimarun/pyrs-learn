@@ -48,7 +48,7 @@ The performance as you can see from the images is far more consistent of the Rus
 
 We also notice that the Rust code is not much different from the Python code. Because of it's zero cost abstractions.
 
-#### PS: The Performance Noted from Rust is not the limit of it's performance, cause it's easy to vectorise and/or parallelise it can become multiple times faster and surely with control of a low level language we could always optimize the code a bit more.
+#### PS: The Performance Noted from Rust is not the limit of it's performance, cause it's easy to vectorise and/or parallelise it can become multiple times faster and surely with control of a system's level language we could always optimize the code a bit more.
 
 
 ### TODO:
